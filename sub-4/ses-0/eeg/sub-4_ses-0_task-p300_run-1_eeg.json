@@ -1,0 +1,42 @@
+{
+	"TaskName": "p300",
+	"Manufacturer": "Brain Products actiCAP",
+	"PowerLineFrequency": 50.0,
+	"SamplingFrequency": 250.0,
+	"SoftwareFilters": {
+		"preprocessing_steps": {
+			"Description": "downsampling, lowpass filter, baseline correction"
+		}
+	},
+	"RecordingDuration": 2969.796,
+	"RecordingType": "continuous",
+	"EEGReference": "left mastoid",
+	"EEGGround": "forehead",
+	"EEGPlacementScheme": "10-10 system",
+	"EEGChannelCount": 63,
+	"EOGChannelCount": 0,
+	"ECGChannelCount": 0,
+	"EMGChannelCount": 0,
+	"TriggerChannelCount": 0,
+	"ManufacturersModelName": "Brain Products actiCAP",
+	"CapManufacturer": "Brain Products",
+	"SoftwareVersions": "n/a",
+	"HardwareFilters": {
+		"Bandpass": {
+			"low_cutoff_hz": 0.016,
+			"high_cutoff_hz": 250.0,
+			"Type": "Chebyshev"
+		}
+	},
+	"TaskDescription": "Two-stage visual speller using covert spatial attention and non-spatial feature attention (color and form). Three speller variants tested: Hex-o-Spell (6 discs with size enhancement and unique colors), Cake Speller (6 triangular faces with unique colors), Center Speller (sequential presentation of 6 geometric shapes with unique colors and forms). Trial duration: 30.0s, SOA: 200.0ms.",
+	"Instructions": "Participants had to strictly fixate the center of the screen and covertly attend to the target symbol. They were instructed to silently count the number of intensifications of the target symbol.",
+	"CogAtlasID": "https://www.cognitiveatlas.org/task/id/tsk_GxjZBNiJorj1K/",
+	"InstitutionName": "Berlin Institute of Technology",
+	"InstitutionAddress": "Germany",
+	"InstitutionalDepartmentName": "Machine Learning Laboratory",
+	"CapManufacturersModelName": "n/a",
+	"SubjectArtefactDescription": "Impedance kept below 20.0 kOhm",
+	"DeviceSerialNumber": "n/a",
+	"Description": "EEG recording.",
+	"MISCChannelCount": 0
+}

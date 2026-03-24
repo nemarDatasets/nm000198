@@ -1,0 +1,213 @@
+_dataset:
+  class: BNCI2015_008
+  code: BNCI2015-008
+  doi: 10.1088/1741-2560/8/6/066003
+  interval:
+  - 0
+  - 1.0
+  n_subjects: 13
+  paradigm: p300
+acquisition:
+  cap_manufacturer: Brain Products
+  channel_types:
+    eeg: 63
+  filters: 0.016-250 Hz bandpass
+  ground: forehead
+  hardware: Brain Products actiCAP
+  impedance_threshold_kohm: 20.0
+  line_freq: 50.0
+  montage: 10-10
+  n_channels: 63
+  reference: left mastoid
+  sampling_rate: 250.0
+  sensor_type: active electrode
+  sensors:
+  - Fp2
+  - AF3
+  - AF4
+  - Fz
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - FCz
+  - FC1
+  - FC2
+  - FC3
+  - FC4
+  - FC5
+  - FC6
+  - T7
+  - T8
+  - Cz
+  - C1
+  - C2
+  - C3
+  - C4
+  - C5
+  - C6
+  - TP7
+  - TP8
+  - CPz
+  - CP1
+  - CP2
+  - CP3
+  - CP4
+  - CP5
+  - CP6
+  - Pz
+  - P1
+  - P2
+  - P3
+  - P4
+  - P5
+  - P6
+  - P7
+  - P8
+  - P9
+  - P10
+  - POz
+  - PO3
+  - PO4
+  - PO7
+  - PO8
+  - PO9
+  - PO10
+  - Oz
+  - O1
+  - O2
+  - Iz
+  - I1
+  - I2
+bci_application:
+  applications:
+  - speller
+  - communication
+  environment: laboratory
+  online_feedback: true
+cross_validation:
+  cv_method: calibration-test split
+  evaluation_type:
+  - within_session
+data_processed: true
+data_structure:
+  n_trials: 60 intensifications per stage (10 sequences × 6 elements)
+  trials_context: per_stage
+documentation:
+  country: Germany
+  data_url: https://github.com/bbci/bbci_public/blob/master/doc/index.markdown
+  doi: 10.1088/1741-2560/8/6/066003
+  institution: Berlin Institute of Technology
+  institution_department: Machine Learning Laboratory
+  investigators:
+  - M S Treder
+  - N M Schmidt
+  - B Blankertz
+  keywords:
+  - P300
+  - ERP
+  - BCI
+  - speller
+  - covert attention
+  - feature attention
+  - gaze-independent
+  license: CC-BY-NC-ND-4.0
+  publication_year: 2011
+  repository: GitHub
+experiment:
+  class_labels:
+  - Target
+  - NonTarget
+  events:
+    NonTarget: 2
+    Target: 1
+  feedback_type: none
+  has_training_test_split: true
+  instructions: Participants had to strictly fixate the center of the screen and covertly attend to the target symbol. They
+    were instructed to silently count the number of intensifications of the target symbol.
+  mode: online
+  n_classes: 2
+  paradigm: p300
+  primary_modality: visual
+  stimulus_modalities:
+  - visual
+  stimulus_type: visual_flash
+  study_design: 'Two-stage visual speller using covert spatial attention and non-spatial feature attention (color and form).
+    Three speller variants tested: Hex-o-Spell (6 discs with size enhancement and unique colors), Cake Speller (6 triangular
+    faces with unique colors), Center Speller (sequential presentation of 6 geometric shapes with unique colors and forms).'
+  synchronicity: synchronous
+  trial_duration: 30.0
+file_format: gdf
+paradigm_specific:
+  detected_paradigm: p300
+  n_repetitions: 10
+  n_targets: 30
+  soa_ms: 200.0
+participants:
+  age_max: 45.0
+  age_mean: 27.0
+  age_min: 16.0
+  bci_experience: naive
+  clinical_population: Healthy
+  gender:
+    female: 5
+    male: 8
+  handedness:
+    left: 1
+    right: 12
+  health_status: patients
+  n_subjects: 13
+  species: human
+performance:
+  accuracy_percent: 92.0
+  cake_speller_accuracy: 90.0
+  center_speller_accuracy: 97.0
+  communication_rate_symbols_per_min: 2.3
+  hex_o_spell_accuracy: 88.0
+preprocessing:
+  bandpass:
+    high_cutoff_hz: 250.0
+    low_cutoff_hz: 0.016
+  data_state: filtered
+  downsampled_to_hz: 250.0
+  epoch_window:
+  - -200.0
+  - 800.0
+  filter_type: Chebyshev
+  highpass_hz: 0.016
+  lowpass_hz: 49.0
+  notes: 'For offline ERP analysis: downsampled to 250 Hz, lowpass filtered below 49 Hz using Chebyshev filter (passbands/stopbands:
+    42/49 Hz). For online classification: downsampled to 100 Hz, no software filter applied. Baseline correction using -200
+    ms prestimulus interval.'
+  preprocessing_applied: true
+  preprocessing_steps:
+  - downsampling
+  - lowpass filter
+  - baseline correction
+  re_reference: linked mastoids
+runs_per_session: 2
+sessions_per_subject: 1
+signal_processing:
+  classifiers:
+  - LDA
+  - SLDA
+  feature_extraction:
+  - ERP components
+  - P300
+  - P3
+  spatial_filters:
+  - shrinkage covariance
+tags:
+  modality:
+  - Visual
+  pathology:
+  - Healthy
+  type:
+  - ERP
+  - P300
