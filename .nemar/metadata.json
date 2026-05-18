@@ -1,0 +1,87 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "validated",
+  "authors": {
+    "M S Treder": {},
+    "N M Schmidt": {},
+    "B Blankertz": {}
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.1088/1741-2560/8/6/066003",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000198",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000198",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0104-8",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    }
+  ],
+  "title": "BNCI 2015-008 Center Speller P300 dataset",
+  "license": "CC-BY-NC-ND-4.0",
+  "dataset_type": "derivative",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "3.3 GB (27 files)"
+  ],
+  "formats": [
+    ".bdf",
+    ".json",
+    ".md",
+    ".tsv",
+    ".yaml",
+    ".yml"
+  ],
+  "description": "A P300-based brain-computer interface dataset comprising EEG recordings from 13 healthy participants performing a gaze-independent speller task using covert spatial and feature attention. The dataset includes data from three speller variants (Hex-o-Spell, Cake Speller, and Center Speller) with 63-channel recordings at 250 Hz, preprocessed and annotated for event-related potential analysis. This benchmark dataset demonstrates high classification accuracy (88-97%) and is designed for evaluating BCI speller performance and communication applications.",
+  "methods_description": "EEG data were acquired using a 63-channel Brain Products actiCAP system at 250 Hz sampling rate with a 10-10 montage, referenced to the left mastoid. Online bandpass filtering (0.016-250 Hz) was applied during acquisition. Offline preprocessing included downsampling to 250 Hz, lowpass filtering below 49 Hz using a Chebyshev filter, baseline correction using a -200 ms prestimulus interval, and re-referencing to linked mastoids. Participants performed a visual speller task requiring covert attention to target symbols while maintaining central fixation, with stimulus onset asynchrony of 200 ms.",
+  "keywords": [
+    {
+      "term": "Event-Related Potentials, P300",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
+    },
+    {
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+    },
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "ERP"
+    },
+    {
+      "term": "covert attention"
+    },
+    {
+      "term": "speller interface"
+    },
+    {
+      "term": "gaze-independent"
+    }
+  ],
+  "source_hash": "562a69091749c9df191bb2e3d4efb6662e9c1ca5b75ec969009b7f329b49ba3c"
+}
