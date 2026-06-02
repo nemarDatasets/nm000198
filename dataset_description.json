@@ -1,39 +1,41 @@
 {
-	"Name": "BNCI 2015-008 Center Speller P300 dataset",
-	"BIDSVersion": "1.9.0",
-	"HEDVersion": "8.4.0",
-	"DatasetType": "derivative",
-	"License": "CC-BY-NC-ND-4.0",
-	"Authors": [
-		"M S Treder",
-		"N M Schmidt",
-		"B Blankertz"
-	],
-	"ReferencesAndLinks": [
-		"https://github.com/bbci/bbci_public/blob/master/doc/index.markdown"
-	],
-	"GeneratedBy": [
-		{
-			"CodeURL": "https://github.com/NeuroTechX/moabb",
-			"Name": "moabb",
-			"Description": "Mother of All BCI Benchmarks",
-			"Version": "1.5.0"
-		}
-	],
-	"SourceDatasets": [
-		{
-			"DOI": "10.1088/1741-2560/8/6/066003",
-			"URL": "https://github.com/bbci/bbci_public/blob/master/doc/index.markdown"
-		}
-	],
-	"Keywords": [
-		"P300",
-		"ERP",
-		"BCI",
-		"speller",
-		"covert attention",
-		"feature attention",
-		"gaze-independent"
-	],
-	"PublicationYear": 2011
+  "Name": "BNCI 2015-008 Center Speller P300 dataset",
+  "BIDSVersion": "1.9.0",
+  "HEDVersion": "8.4.0",
+  "DatasetType": "derivative",
+  "License": "CC-BY-NC-ND-4.0",
+  "Authors": [
+    "M S Treder",
+    "N M Schmidt",
+    "B Blankertz"
+  ],
+  "ReferencesAndLinks": [
+    "https://github.com/bbci/bbci_public/blob/master/doc/index.markdown"
+  ],
+  "GeneratedBy": [
+    {
+      "CodeURL": "https://github.com/NeuroTechX/moabb",
+      "Name": "moabb",
+      "Description": "Mother of All BCI Benchmarks",
+      "Version": "1.5.0"
+    }
+  ],
+  "SourceDatasets": [
+    {
+      "DOI": "10.1088/1741-2560/8/6/066003",
+      "URL": "https://github.com/bbci/bbci_public/blob/master/doc/index.markdown"
+    }
+  ],
+  "Keywords": [
+    "P300",
+    "ERP",
+    "BCI",
+    "speller",
+    "covert attention",
+    "feature attention",
+    "gaze-independent"
+  ],
+  "PublicationYear": 2011,
+  "DatasetDOI": "10.82901/nemar.nm000198",
+  "Version": "1.0.0"
 }
