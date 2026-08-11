@@ -1,0 +1,80 @@
+{
+ "dataset": "nm000198",
+ "moabb_class": "BNCI2015_008",
+ "moabb_version_used": "1.5.0",
+ "retrieved": "2026-08-11",
+ "retrieved_by": "moabb.datasets.BNCI2015_008.data_path()",
+ "upstream_cache_root": "/expanse/lustre/scratch/bpinto/temp_project/sourcedata_staging/mne_data/MNE-bnci-data/bbci/BNCIHorizon2020-CenterSpeller",
+ "license": "CC-BY-NC-ND-4.0",
+ "doi": "10.1088/1741-2560/8/6/066003",
+ "naming": "upstream_filenames_restored",
+ "n_files": 13,
+ "total_bytes": 6650341837,
+ "files": [
+  {
+   "file": "CenterSpeller_VPiac.mat",
+   "bytes": 603253322,
+   "sha256": "76b9b095a614419e0a5bc06beaa5cf92c197d5cb0caa32fb5e35bece8919c144"
+  },
+  {
+   "file": "CenterSpeller_VPiba.mat",
+   "bytes": 502830054,
+   "sha256": "e6451d83b81f77472c086c4fd7afca8296167f22ebbd57deb97cb10e17cfd261"
+  },
+  {
+   "file": "CenterSpeller_VPibb.mat",
+   "bytes": 505120320,
+   "sha256": "61984b06e3338243434734e85dec1faba6c14d2ceb3191f7c92d85975a148283"
+  },
+  {
+   "file": "CenterSpeller_VPibc.mat",
+   "bytes": 585641911,
+   "sha256": "7f0b510a687027bd87fb7ae54b57d58904e9adf88145f08065d8c516be2df343"
+  },
+  {
+   "file": "CenterSpeller_VPibd.mat",
+   "bytes": 590597960,
+   "sha256": "547b7cf4ca6de3a10c0a5a35ee6c7c5284b17f6f3d87053350e0d9047ee65fa6"
+  },
+  {
+   "file": "CenterSpeller_VPibe.mat",
+   "bytes": 460405243,
+   "sha256": "119c2b3a73f6b244ea3f9ffa0990d1aa765a41765fd513807b1eb81224a9b841"
+  },
+  {
+   "file": "CenterSpeller_VPibf.mat",
+   "bytes": 538672870,
+   "sha256": "1a20cd81c1d3b24c235da1755f7fc6c7333e3e4d646d3d5a9ec76db1fc0092ca"
+  },
+  {
+   "file": "CenterSpeller_VPibg.mat",
+   "bytes": 465706638,
+   "sha256": "5932bf59449ba09320d0afa3f352be90da8f89dfff7c33202fe0b117a9f7cb69"
+  },
+  {
+   "file": "CenterSpeller_VPibh.mat",
+   "bytes": 528600044,
+   "sha256": "4a5dd41b3fc1f5819d070f875e266792289744c4340575a13571ef69b20865fc"
+  },
+  {
+   "file": "CenterSpeller_VPibi.mat",
+   "bytes": 490374196,
+   "sha256": "b7cc5f4cf38953e943002afe323e65a7df526c43885744b021a87d69ac84ee30"
+  },
+  {
+   "file": "CenterSpeller_VPibj.mat",
+   "bytes": 385965411,
+   "sha256": "8fc97b18d2d798745ffd7bdf79e569f7026a3f80d5493030ca4f904aea4215cf"
+  },
+  {
+   "file": "CenterSpeller_VPica.mat",
+   "bytes": 497271183,
+   "sha256": "a7ed5dbcf9906eb3f142c6885e5e2e031b173206004df09aa28facef40bbfa26"
+  },
+  {
+   "file": "CenterSpeller_VPsaf.mat",
+   "bytes": 495902685,
+   "sha256": "282dfaa06e377d3c8dcb70b450912ddf20c41795a8eee8ffec406f53ba0a7e91"
+  }
+ ]
+}
