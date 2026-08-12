@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BNCI 2015-008 Center Speller P300 dataset",
-  "description": "A P300-based brain-computer interface dataset comprising EEG recordings from 13 healthy participants performing a visual speller task using covert spatial attention and feature attention mechanisms. The dataset includes data from three speller variants (Hex-o-Spell, Cake Speller, and Center Speller) with 63-channel recordings at 250 Hz sampling rate. Preprocessed data includes downsampling, filtering, and baseline correction, with classification accuracies reaching 97% for the Center Speller variant.",
-  "methods_description": "EEG data were acquired using a 63-channel Brain Products actiCAP system at 250 Hz sampling rate with a 10-10 electrode montage. Online bandpass filtering (0.016-250 Hz) was applied during acquisition with reference to left mastoid and ground at forehead. Preprocessing included downsampling to 250 Hz, lowpass filtering below 49 Hz using Chebyshev filter, and baseline correction using a -200 ms prestimulus interval. Participants performed a visual speller task with sequential presentation of geometric shapes while maintaining central fixation and covert attention to target stimuli.",
+  "description": "A P300-based brain-computer interface dataset comprising EEG recordings from 13 healthy participants performing a visual speller task using covert spatial attention and feature attention mechanisms. The dataset includes data from three speller variants (Hex-o-Spell, Cake Speller, and Center Speller) with 63-channel recordings sampled at 250 Hz. Preprocessed data includes downsampling, filtering, and baseline correction.",
+  "methods_description": "EEG data were acquired using a 63-channel Brain Products actiCAP system (10-10 montage) with active electrodes, referenced to the left mastoid and grounded at the forehead. Sampling rate was 250 Hz with online bandpass filtering (0.016-250 Hz). Impedance was maintained below 20 kOhm. Preprocessing included downsampling to 250 Hz, lowpass filtering below 49 Hz using a Chebyshev filter, baseline correction using a -200 ms prestimulus interval, and re-referencing to linked mastoids. Participants performed a visual speller task with sequential presentation of geometric shapes while maintaining central fixation and covertly attending to target symbols.",
   "license": "CC-BY-NC-ND-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -19,10 +19,7 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
     },
     {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+      "term": "brain-computer interfaces"
     },
     {
       "term": "EEG"
@@ -31,16 +28,22 @@
       "term": "covert attention"
     },
     {
-      "term": "feature attention"
-    },
-    {
       "term": "visual speller"
     },
     {
-      "term": "speller"
+      "term": "gaze-independent"
     },
     {
-      "term": "gaze-independent"
+      "term": "feature attention"
+    },
+    {
+      "term": "ERP"
+    },
+    {
+      "term": "P300"
+    },
+    {
+      "term": "BCI"
     }
   ],
   "related_identifiers": [
@@ -55,11 +58,6 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000198",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.21105/joss.01896",
       "identifier_type": "DOI",
       "relation_type": "References"
@@ -68,6 +66,11 @@
       "identifier": "10.1038/s41597-019-0104-8",
       "identifier_type": "DOI",
       "relation_type": "References"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000198",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_general": "Dataset",
@@ -76,15 +79,16 @@
     "eeg"
   ],
   "sizes": [
-    "3.3 GB (27 files)"
+    "10.0 GB (40 files)"
   ],
   "formats": [
     ".bdf",
     ".json",
+    ".mat",
     ".md",
     ".tsv",
     ".yaml",
     ".yml"
   ],
-  "source_hash": "54ca4833acf12ab2a3c2823d3c6052976f0ec40e9a703cb129eb4636c332bf1d"
+  "source_hash": "7c514fa2e3da39efb10bf5a786dfe575b1081eeeecfdcb9fa7be09ef764070e3"
 }
