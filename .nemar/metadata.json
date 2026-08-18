@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BNCI 2015-008 Center Speller P300 dataset",
-  "description": "A P300-based brain-computer interface dataset comprising EEG recordings from 13 healthy participants performing a visual speller task using covert spatial attention and feature attention mechanisms. The dataset includes data from three speller variants (Hex-o-Spell, Cake Speller, and Center Speller) with 63-channel recordings sampled at 250 Hz. Preprocessed data includes downsampling, filtering, and baseline correction.",
-  "methods_description": "EEG data were acquired using a 63-channel Brain Products actiCAP system (10-10 montage) with active electrodes, referenced to the left mastoid and grounded at the forehead. Sampling rate was 250 Hz with online bandpass filtering (0.016-250 Hz). Impedance was maintained below 20 kOhm. Preprocessing included downsampling to 250 Hz, lowpass filtering below 49 Hz using a Chebyshev filter, baseline correction using a -200 ms prestimulus interval, and re-referencing to linked mastoids. Participants performed a visual speller task with sequential presentation of geometric shapes while maintaining central fixation and covertly attending to target symbols.",
+  "description": "A P300-based brain-computer interface dataset comprising EEG recordings from 13 healthy participants performing a visual speller task using covert spatial attention and feature attention mechanisms. The dataset includes data from three speller variants (Hex-o-Spell, Cake Speller, and Center Speller) with 63-channel recordings at 250 Hz sampling rate. Preprocessed data includes downsampling, filtering, and baseline correction. The original study reported 97% accuracy on the Center Speller variant.",
+  "methods_description": "EEG data were acquired using a 63-channel Brain Products actiCAP system at 250 Hz sampling rate with a 10-10 electrode montage. Online bandpass filtering (0.016-250 Hz) was applied during acquisition with reference to left mastoid and ground at forehead. Preprocessing included downsampling to 250 Hz, lowpass filtering below 49 Hz using Chebyshev filter, baseline correction using -200 ms prestimulus interval, and epoching from -200 to 800 ms around stimulus onset. Classification employed LDA and shrinkage covariance spatial filters with calibration-test split cross-validation.",
   "license": "CC-BY-NC-ND-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -38,9 +38,6 @@
     },
     {
       "term": "ERP"
-    },
-    {
-      "term": "P300"
     },
     {
       "term": "BCI"
@@ -90,5 +87,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "7c514fa2e3da39efb10bf5a786dfe575b1081eeeecfdcb9fa7be09ef764070e3"
+  "source_hash": "b9693bdc3bdb29613804e7cbf4f3b82caf78c9bf49c1af49838371b4ae468971"
 }
