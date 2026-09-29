@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BNCI 2015-008 Center Speller P300 dataset",
-  "description": "A P300-based brain-computer interface dataset comprising EEG recordings from 13 healthy participants performing a visual speller task using covert spatial attention and feature attention mechanisms. The dataset includes data from three speller variants (Hex-o-Spell, Cake Speller, and Center Speller) with 63-channel recordings at 250 Hz sampling rate. Preprocessed data includes downsampling, filtering, and baseline correction. The original study reported 97% accuracy on the Center Speller variant.",
-  "methods_description": "EEG data were acquired using a 63-channel Brain Products actiCAP system at 250 Hz sampling rate with a 10-10 electrode montage. Online bandpass filtering (0.016-250 Hz) was applied during acquisition with reference to left mastoid and ground at forehead. Preprocessing included downsampling to 250 Hz, lowpass filtering below 49 Hz using Chebyshev filter, baseline correction using -200 ms prestimulus interval, and epoching from -200 to 800 ms around stimulus onset. Classification employed LDA and shrinkage covariance spatial filters with calibration-test split cross-validation.",
+  "description": "EEG recordings from 13 participants performing a gaze-independent P300 speller task, the Center Speller variant. The task relies on covert spatial attention and non-spatial feature attention (color and form). Six geometric shapes were presented sequentially at the screen center while participants silently counted target intensifications. The data are provided as a BIDS derivative with target and non-target event annotations, and are intended for evaluating ERP-based brain-computer interface classification.",
+  "methods_description": "EEG was recorded from 63 active Brain Products actiCAP electrodes in a 10-10 layout, referenced to the left mastoid, at a sampling rate of 250 Hz after downsampling. Participants fixated the screen center and covertly attended to the target symbol, with a stimulus onset asynchrony of 200 ms and 10 sequences of 6 elements per stage. Offline preprocessing included a Chebyshev low-pass filter below 49 Hz, re-referencing to linked mastoids, and baseline correction over the 200 ms prestimulus interval. Classification used LDA with shrinkage covariance.",
   "license": "CC-BY-NC-ND-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -13,34 +13,25 @@
   },
   "keywords": [
     {
-      "term": "Event-Related Potentials, P300",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
-    },
-    {
-      "term": "brain-computer interfaces"
-    },
-    {
       "term": "EEG"
+    },
+    {
+      "term": "P300"
+    },
+    {
+      "term": "brain-computer interface"
+    },
+    {
+      "term": "event-related potentials"
     },
     {
       "term": "covert attention"
     },
     {
-      "term": "visual speller"
+      "term": "speller"
     },
     {
       "term": "gaze-independent"
-    },
-    {
-      "term": "feature attention"
-    },
-    {
-      "term": "ERP"
-    },
-    {
-      "term": "BCI"
     }
   ],
   "related_identifiers": [
@@ -76,7 +67,7 @@
     "eeg"
   ],
   "sizes": [
-    "10.0 GB (40 files)"
+    "9.27 GB (40 files)"
   ],
   "formats": [
     ".bdf",
