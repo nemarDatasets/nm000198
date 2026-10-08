@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BNCI 2015-008 Center Speller P300 dataset",
-  "description": "EEG recordings from 13 participants performing a gaze-independent P300 speller task, the Center Speller variant. The task relies on covert spatial attention and non-spatial feature attention (color and form). Six geometric shapes were presented sequentially at the screen center while participants silently counted target intensifications. The data are provided as a BIDS derivative with target and non-target event annotations, and are intended for evaluating ERP-based brain-computer interface classification.",
-  "methods_description": "EEG was recorded from 63 active Brain Products actiCAP electrodes in a 10-10 layout, referenced to the left mastoid, at a sampling rate of 250 Hz after downsampling. Participants fixated the screen center and covertly attended to the target symbol, with a stimulus onset asynchrony of 200 ms and 10 sequences of 6 elements per stage. Offline preprocessing included a Chebyshev low-pass filter below 49 Hz, re-referencing to linked mastoids, and baseline correction over the 200 ms prestimulus interval. Classification used LDA with shrinkage covariance.",
+  "description": "EEG recordings from 13 participants using a gaze-independent P300 visual speller based on covert spatial attention and non-spatial feature attention (color and form). The dataset covers the Center Speller variant, in which six geometric shapes with unique colors and forms are presented sequentially while participants fixate the screen center and covertly attend to a target symbol. Data were recorded with 63 channels at 250 Hz and include target and non-target event annotations for ERP and BCI speller research.",
+  "methods_description": "Participants fixated the center of the screen and silently counted intensifications of the target symbol. EEG was recorded with 63 active Brain Products actiCAP electrodes in a 10-10 montage, referenced to the left mastoid, with a 0.016-250 Hz online bandpass. Data were downsampled to 250 Hz, lowpass filtered below 49 Hz, and baseline-corrected using the -200 to 0 ms prestimulus interval. Stimulus onset asynchrony was 200 ms with 10 sequences per stage.",
   "license": "CC-BY-NC-ND-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -13,25 +13,29 @@
   },
   "keywords": [
     {
-      "term": "EEG"
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
       "term": "P300"
     },
     {
-      "term": "brain-computer interface"
-    },
-    {
       "term": "event-related potentials"
-    },
-    {
-      "term": "covert attention"
     },
     {
       "term": "speller"
     },
     {
-      "term": "gaze-independent"
+      "term": "covert attention"
+    },
+    {
+      "term": "feature attention"
     }
   ],
   "related_identifiers": [
@@ -78,5 +82,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "b9693bdc3bdb29613804e7cbf4f3b82caf78c9bf49c1af49838371b4ae468971"
+  "source_hash": "51ec0e0e261df7878cbd07f461bf4370c590cb9da37ff637cd44868ab032f524"
 }
